@@ -1,0 +1,593 @@
+{% load static %}
+<!--<!DOCTYPE html>-->
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRRAVISH INTERNATIONAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="description"
+        content="Your ultimate resource for all import and export information including legal requirements, documentation, and strategies for successful global trade.">
+    <meta name="keywords"
+        content="import export, global trade, import documentation, export documentation, trade strategies">
+    <!-- Favicon -->
+
+    <link rel="icon" href="{% static '/images/removebg.png' %}" sizes="16x16" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/styles.css' %}">
+
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "PRRAVISH International",
+            "url": "https://prravishinternational.com",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://prravishinternational.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+}
+    </script>
+</head>
+
+<body>
+    <!-- Loading Spinner -->
+    <div class="spinner-wrapper" id="spinner">
+        <img src="{% static '/videos/gif.gif' %}" alt="Loading..." class="spinner-image">
+    </div>
+
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#home">
+                <img src="{% static '/images/removebg.png' %}" alt="PRRAVISH International Logo" class="img-fluid">
+                <img src="{% static '/images/removebg2.png' %}" alt="PRRAVISH International Logo" class="img-fluid">
+            </a>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ourbusiness">Our Business</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutus">About Us</a></li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Indian Spices</a></li>
+                            <li><a class="dropdown-item" href="#">Indian Herbs</a></li>
+                            <li><a class="dropdown-item" href="#">Dry Fruits</a></li>
+                            <li><a class="dropdown-item" href="#">Nuts-Nut Products</a></li>
+                            <li><a class="dropdown-item" href="#">Fresh Fruits</a></li>
+                            <li><a class="dropdown-item" href="#">Fresh Vegetables</a></li>
+                            <li><a class="dropdown-item" href="#">Natural Honey</a></li>
+                            <li><a class="dropdown-item" href="#">Healthy Millets</a></li>
+                            <li><a class="dropdown-item" href="#">Handicrafts Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#productinquiry">Product Inquiry</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="translate-widget">
+                <div id="google_translate_element"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- start home page -->
+    <section id="home" class="bg-video-container">
+        <div class="dark-overlay"></div>
+        <video autoplay muted loop class="bg-video">
+            <source src="{% static '/videos/import_export.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay-text">
+            <h1>Welcome To</h1>
+            <h2 class="tight-spacing"><b>PRRAVISH INTERNATIONAL</b></h2>
+            <p class="tight-spacing-p">
+                "ENSURING TOP-NOTCH PRODUCTS REACH EVERY CORNER OF THE GLOBE"
+            </p>
+            <a href="#contact">
+                <button type="button" class="btn btn-dark">Contact Us</button>
+            </a>
+        </div>
+    </section>
+    <!-- end home page -->
+
+    <!-- start ourbussiness -->
+    <section id="ourbusiness" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <div>
+                            <h2 class="underline-heading pb-2 mb-4"><b>Our Business</b></h2>
+                            <h5>
+                                If you are looking for an import and export any products please contact us
+                            </h5>
+                            <ul>
+                                <li>
+                                    <h5>Do you need a product?</h5>
+                                </li>
+                            </ul>
+                            <h5>
+                                "We source all things from medicines to furniture. Due to our international relations,
+                                we
+                                are
+                                in a very good position to assist customers looking for the right product at the right
+                                price."
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <div>
+                            <img src="{% static '/images/business.jpeg' %}" alt="PRRAVISH International Business"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <div>
+                            <h3>Global Expertise</h3>
+                            <p>
+                                Prravish International Import Export is a globally recognized import and export company
+                                dedicated to helping businesses thrive in the international marketplace. With a strong
+                                foundation built on integrity, reliability, and customer satisfaction, we have become a
+                                trusted partner for companies across various industries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <div>
+                            <h3>Reliable Partnerships</h3>
+                            <p>
+                                We have built strong and reliable partnerships with reputable suppliers, manufacturers,
+                                logistics providers, and government agencies worldwide. These partnerships enable us to
+                                offer seamless and efficient import and export services, ensuring smooth operations,
+                                timely
+                                deliveries, and cost-effective solutions for your business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <div>
+                            <h3>Exceptional Customer Service</h3>
+                            <p>
+                                We prioritize delivering an exceptional customer experience. Our dedicated team is
+                                always ready to assist you, providing timely and responsive support at every step.
+                                Whether you have questions, need assistance, or require strategic guidance, we are
+                                committed to going above and beyond to ensure your satisfaction and success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <div>
+                            <h3>Ethical and Sustainable Practices</h3>
+                            <p>
+                                We believe in conducting business with integrity and sustainability in mind. Our
+                                commitment to ethical practices extends to environmental stewardship, fair trade, and
+                                community engagement. By choosing us, you align your business with responsible values
+                                and contribute to a more sustainable and equitable global trade ecosystem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <div>
+                            <h3 class="card-title">Tailored Solutions</h3>
+                            <p class="card-text">
+                                We understand that every business has unique import and export requirements. That's why
+                                we offer tailored solutions designed to meet your specific needs. Our team takes the
+                                time to understand your goals, challenges, and industry dynamics, allowing us to develop
+                                personalized strategies and deliver exceptional results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <div>
+                            <h3>Technology-driven Efficiency</h3>
+                            <p>
+                                At Prravish International Import Export, we leverage the power of technology to enhance
+                                efficiency and accuracy in our operations. From advanced tracking systems to automated
+                                documentation processes, we employ cutting-edge tools to streamline workflows, reduce
+                                errors, and ensure seamless communication throughout the import and export journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end ourbussiness -->
+
+    <!-- start aboutus -->
+    <section id="aboutus" class="py-5">
+        <div class="container text-center">
+            <h2 class="underline-heading pb-2 mb-4"><b>Why Choose Us?</b></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>
+                        <i aria-hidden="true" class="bi bi-hand-thumbs-up-fill icon-size"></i><br>
+                    <h3>Quality Product</h3>
+                    "Prravish International Believes In Nothing But, Quality With Commitment."
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <i aria-hidden="true" class="bi bi-clock icon-size"></i><br>
+                    <h3>Time Shipment</h3>
+                    "Dedicated Order Fulfillment To Ensure On Time Shipment."
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <i aria-hidden="true" class="bi bi-person-check-fill icon-size"></i><br>
+                    <h3>Classic Bland</h3>
+                    "Prravish International Is a Classic Bland Of Ethics And Morals With Spirituality."
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <p>
+                        <i aria-hidden="true" class="bi bi-cash-stack icon-size"></i><br>
+                    <h3>Best Pricing</h3>
+                    "We Give a Best Competitive Price To Our Customer."
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <i aria-hidden="true" class="bi bi-bookmark icon-size"></i><br>
+                    <h3>Execution Expertise</h3>
+                    "Unique Expertise In Agriculture Analysis And Quality Control."
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <i aria-hidden="true" class="bi bi-gift-fill icon-size"></i><br>
+                    <h3>Best Packaging</h3>
+                    "We Embrace The Packaging Standards Of Indian Institute Of Packaging."
+                    </p>
+                </div>
+            </div>
+        </div><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-center-img"> <!-- Centering the content -->
+                        <img src="{% static '/images/parth.png'%}" alt="CEO & FOUNDER OF PRRAVISH INTERNATIONAL"
+                            class="img-fluid rounded-circle">
+                        <h3><b>MR. PARTH GHANTALA</b></h3>
+                        <h6 style="font-size: 0.8rem;">CEO & FOUNDER OF PRRAVISH INTERNATIONAL</h6>
+                        <h6 style="font-size: 0.8rem;">POWERD BY PRRAVISH GROUP OF COMPANIES</h6>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h4 class="underline-heading pb-2 mb-4"><b>About Us</b></h4>
+                    </div>
+                    <div>
+                        <h2>Welcome to The Prravish International</h2>
+                    </div>
+                    <p class="first-paragraph">
+                        At Prravish International, we pride ourselves on being a leading player in the import and
+                        export industry. Our mission is to facilitate international trade by providing efficient and
+                        cost-effective solutions to businesses of all sizes. With our team of experts and a strong
+                        global network, we ensure smooth operations, timely deliveries, and exceptional customer
+                        service. Learn more about our company, values, and commitment to excellence on our About Us
+                        page.
+                    </p>
+                    <p class="second-paragraph">
+                        Prravish International is a globally recognized import and export company dedicated to
+                        helping businesses thrive in the international marketplace. With a strong foundation built
+                        on integrity, reliability, and customer satisfaction, we have become a trusted partner for
+                        companies across various industries.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <h2 class="underline-heading pb-2 mb-4"><b>Our Membership</b></h2>
+            <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slider-item">
+                        <img src="{% static '/images/membership/mem1.png'%}" alt="Import Export Code Licence">
+                        <img src="{% static '/images/membership/mem2.png'%}" alt="Ministry of MSME, Govt. of India">
+                        <img src="{% static '/images/membership/mem3.png'%}" alt="APEDA">
+                        <img src="{% static '/images/membership/mem4.png'%}"
+                            alt="Federation Of Indian Export Organisations">
+                        <img src="{% static '/images/membership/mem5.png'%}" alt="Make In India">
+                        <img src="{% static '/images/membership/mem6.png'%}" alt="Fssai">
+                        <img src="{% static '/images/membership/mem7.png'%}" alt="Foreign Trade">
+                        <img src="{% static '/images/membership/mem8.png'%}" alt="SGS">
+                        <img src="{% static '/images/membership/mem9.png'%}" alt="Spices Board India">
+                    </div>
+                    <!-- Duplicate the images for the infinite loop effect -->
+                    <div class="slider-item">
+                        <img src="{% static '/images/membership/mem1.png'%}" alt="Import Export Code Licence">
+                        <img src="{% static '/images/membership/mem2.png'%}" alt="Ministry of MSME, Govt. of India">
+                        <img src="{% static '/images/membership/mem3.png'%}" alt="APEDA">
+                        <img src="{% static '/images/membership/mem4.png'%}"
+                            alt="Federation Of Indian Export Organisations">
+                        <img src="{% static '/images/membership/mem5.png'%}" alt="Make In India">
+                        <img src="{% static '/images/membership/mem6.png'%}" alt="Fssai">
+                        <img src="{% static '/images/membership/mem7.png'%}" alt="Foreign Trade">
+                        <img src="{% static '/images/membership/mem8.png'%}" alt="SGS">
+                        <img src="{% static '/images/membership/mem9.png'%}" alt="Spices Board India">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about us -->
+
+    <!-- start product -->
+    <section class="container py-5">
+        <div class="container product-section">
+            <div class="text-center mb-5">
+                <h2 class="underline-heading pb-2 mb-4"><b>Our Product</b></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="{% static 'images/products/Onion.jpeg' %}" class="card-img-top" alt="Dry fruits-Figs">
+                        <div class="card-body">
+                            <a href="{% url 'products' %}"><button class="more-button rounded-circle">More</button></a>
+                            <h5 class="card-title product-title">Dry fruits-Figs</h5>
+                            <p class="card-text product-text">Figs are the fruit of the ficus tree, which is part of the
+                                mulberry family. Figs have a unique, sweet taste, soft and chewy texture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="{% static 'images/products/wheat.jpg' %}" class="card-img-top" alt="Handicrafts">
+                        <div class="card-body">
+                            <a href="{% url 'products' %}"><button class="more-button rounded-circle">More</button></a>
+                            <h5 class="card-title product-title">Handicrafts</h5>
+                            <p class="card-text product-text">We create quality products out of Bamboo tree, Palm tree
+                                and Coconut tree which are both functional and decorative in nature.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Fresh fruits-Bananas">
+                        <div class="card-body">
+                            <a href="{% url 'products' %}"><button class="more-button rounded-circle">More</button></a>
+                            <h5 class="card-title product-title">Fresh fruits-Bananas</h5>
+                            <p class="card-text product-text">Having a banana at breakfast every day adds a nutrient to
+                                your body to support normal heart function.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end product -->
+
+    <!-- start productinquiry -->
+    <section id="productinquiry" class="py-5">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="underline-heading mb-4">
+                    <b>Enquire Now</b>
+                </h2>
+            </div>
+            <div class="d-flex justify-content-center">
+                <form action="" class="form-width" enctype="multipart/form-data" method="post"
+                    style="background-color: lightgray; padding: 50px;">
+                    {% csrf_token %}
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email"
+                                required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="phone">Phone <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="phone" name="phone"
+                                placeholder="Enter Phone Number" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="product">Interested Product <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="product" name="product"
+                                placeholder="Enter Product Name" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label for="address">Address <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="address" name="address"
+                                placeholder="Enter Address" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="city">City <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="Enter City"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="state">State <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="state" name="state" placeholder="Enter State"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="country">Country <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="country" name="country"
+                                placeholder="Enter Country" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="3"
+                                placeholder="Enter your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-dark btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end productinquiry -->
+
+    <!-- start feedback -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center flex-column">
+                <h2 class="underline-heading"><b>Our Buyer/Supplier Feedback</b></h2>
+            </div>
+        </div>
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-img">
+                            <img src="{% static '/images/feedback/feedback1.jpeg' %}" class="img-fluid rounded-circle"
+                                alt="Feedback Image">
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="testimonial-name">william jack</h5>
+                            <p><i class="bi bi-quote testimonial-icon"></i>Donec facilisis quam ut purus rutrum
+                                lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                                vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique
+                                senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui
+                                quis scelerisque.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="{% static '/images/feedback/feedback2.jpeg' %}" class="img-fluid rounded-circle"
+                                alt="Feedback Image">
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="testimonial-name">william jack</h5>
+                            <p><i class="bi bi-quote testimonial-icon"></i>Donec facilisis quam ut purus rutrum
+                                lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                                vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique
+                                senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui
+                                quis scelerisque.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="{% static '/images/feedback/feedback3.jpg' %}" class="img-fluid rounded-circle"
+                                alt="Feedback Image">
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="testimonial-name">william jack</h5>
+                            <p><i class="bi bi-quote testimonial-icon"></i>Donec facilisis quam ut purus rutrum
+                                lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                                vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique
+                                senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui
+                                quis scelerisque.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-img">
+                            <img src="{% static '/images/feedback/feedback2.jpeg' %}" class="img-fluid rounded-circle"
+                                alt="Feedback Image">
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="testimonial-name">william jack</h5>
+                            <p><i class="bi bi-quote testimonial-icon"></i>Donec facilisis quam ut purus rutrum
+                                lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam
+                                vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique
+                                senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui
+                                quis scelerisque.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="fa fa-chevron-left fa-lg" style="color: #6f5c3d!important;"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="fa fa-chevron-right fa-lg" style="color: #6f5c3d!important;"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end feedback -->
+
+    {% include "footer.html" %}

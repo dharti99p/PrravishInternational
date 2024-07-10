@@ -1,0 +1,740 @@
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #e3e0d6 !important;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 59px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Colors */
+.bg-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Spacing */
+section-content {
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .nav-item {
+        margin-bottom: 10px;
+    }
+    .section {
+        margin: 10px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease;
+}
+
+.bg-video-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    /* Ensure the video takes the full height of the viewport */
+    overflow: hidden;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    color: #e4dbbf;
+    padding: 10px;
+    z-index: 2;
+}
+
+.overlay-text a {
+    text-decoration: none;
+}
+
+.overlay-text h2 {
+    position: relative;
+    top: -10px;
+}
+
+.overlay-text p {
+    font-size: 1.1rem;
+    margin-top: -10px;
+    background: rgba(99, 84, 48, 0.8);
+    border-radius: 20px;
+}
+
+.overlay-text button {
+    display: block;
+    margin: 0 auto;
+    /* This will center the button horizontally */
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.overlay-text button:hover {
+    background-color: #917e56 !important;
+    color: black;
+}
+
+.tight-spacing-p {
+    letter-spacing: 3px; /* or adjust to 0 if needed */
+}
+
+.tight-spacing {
+    letter-spacing: 10px; /* or adjust to 0 if needed */
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+}
+
+.nav-item {
+    margin-right: 25px;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    width: auto;
+    display: inline-block;
+}
+
+.navbar-nav .nav-link {
+    color: #e4dbbf !important;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #917e56 !important;
+    font-size: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-item .dropdown-menu {
+    background-color: #343a40 !important;
+}
+
+.navbar-dark .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: #e4dbbf !important;
+}
+
+.navbar-dark .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #917e56 !important; /* Change to your desired hover color */
+    color: black !important; /* Change text color if needed */
+    font-size: 20px;
+}
+
+/* Open dropdown on hover */
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* Ensure dropdown stays open on hover */
+    .dropdown-menu {
+        margin-top: 0;
+    }
+
+/* About Section */
+#about {
+    height: 100vh;
+}
+
+.bi {
+    color: #927f55 !important;
+}
+
+.icon-size {
+    font-size: 3rem;
+    /* Reduce the icon size from 5rem to 3rem or any desired size */
+    margin-bottom: 10px;
+}
+
+/* our business */
+
+.underline-heading {
+    display: inline-block;
+    border-bottom: 2px solid gray;
+    /* Gray line below the heading */
+    padding-bottom: 10px;
+    /* Space between heading text and underline */
+    color: #3c3d3c !important;
+}
+
+
+
+/* Our Membership */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    animation: slide 30s linear infinite;
+}
+
+.slider-item {
+    display: flex;
+}
+
+.slider-item img {
+    width: auto;
+    height: 150px;
+    margin: 25px;
+}
+
+/* Animation to move the images to the left */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* about us  */
+
+#aboutus .container {
+    margin-top: 20px;
+}
+
+#aboutus h2 {
+    margin-bottom: 20px;
+}
+
+#aboutus p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+#aboutus .first-paragraph {
+    color: #917e56 !important;
+    /* Example color for the first paragraph */
+    font-size: 1.1em;
+}
+
+
+/* Custom styles for the image and text */
+.text-center-img {
+    text-align: center;
+    /* Center the content within this div */
+}
+
+.text-center-img img {
+    width: 370px;
+    /* Adjust the size as needed */
+    height: 370px;
+    object-fit: cover;
+    /* Ensure the image fits within the circle */
+    border-radius: 50%;
+    /* Make the image circular */
+    border: 5px solid #fff;
+    /* Optional: Add a border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a shadow */
+    margin-bottom: 15px;
+    /* Space between the image and the text */
+}
+
+.text-center-img h2,
+.text-center-img h6 {
+    margin: 0;
+    /* Remove margins */
+}
+
+.text-center-img h2 {
+    margin-top: 15px;
+    /* Add some space between the image and the text */
+    font-size: 1.5em;
+    /* Adjust the font size as needed */
+}
+
+.text-center-img h6 {
+    font-size: 1em;
+    /* Adjust the font size as needed */
+    margin-top: 5px;
+    /* Adjust this margin if needed to fine-tune spacing */
+}
+
+
+
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    /* Makes the button circular */
+    background-color: #927f55;
+    /* Example background color */
+    opacity: 0.75;
+    /* Optional: reduces brightness for a subtle effect */
+    transform: scale(0.6);
+    transition: transform 0.3s ease;
+}
+
+.carousel-indicators button.active,
+.carousel-indicators button:hover {
+    background-color: #917e56;
+    /* Active/hovered indicator color */
+    transform: scale(1.2);
+}
+
+@media (max-width: 991px) {
+    /* Bootstrap's breakpoint for small devices */
+    .carousel-indicators button {
+        margin-bottom: -50px;        
+    }
+}
+
+.carousel-item {
+    min-height: 380px;
+    position: relative;
+}
+
+.carousel-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid white; */
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+
+    /* Bootstrap's breakpoint for large devices */
+    .carousel-img {
+        width: 100px;
+        /* Increase the image size for larger screens */
+        height: 100px;
+        /* Adjust the height accordingly */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 991px) {
+    /* Bootstrap's breakpoint for small devices */
+    .carousel-img {
+        width: 80px;
+        /* Decrease the image size for smaller screens */
+        height: 80px;
+        /* Adjust the height accordingly */
+    }
+}
+
+
+.carousel-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    bottom: 50px;
+    padding: 0;
+    color: black;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 991px) {
+    .carousel-caption {
+        bottom: -10px;
+    }
+}
+
+.testimonial-name {
+    font-size: 20px;
+    font-weight: 400px;
+    text-transform: capitalize;
+
+}
+
+.testimonial-icon {
+    font-size: 30px;
+    margin-top: -5px;
+    margin-right: 5px;
+}
+
+/* Custom styles for the contact section 
+
+/* General Styles */
+/* Differentiate Sections */
+.about-us, .contact-details{
+    padding-bottom: 20px;
+    /* Space below each section */
+}
+
+/* Highlight Active Section */
+.active-section {
+    border-bottom: 4px solid #917e56;
+    /* Active section border */
+    padding-bottom: 30px;
+    /* More space for active section */
+}
+
+/* Custom Link Color */
+.custom-link-color {
+    color: #917e56 !important;
+}
+
+.custom-link-color:hover {
+    color: #6f5c3d !important;
+    /* Slightly darker shade */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact>.row>div {
+        flex: 100%;
+        /* Full width on small screens */
+    }
+}
+
+
+
+/* Style for the WhatsApp FAB */
+.whatsapp-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 5px;
+    /* Adjust padding as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-fab:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the icon on hover */
+    text-decoration: none;
+}
+
+.whatsapp-fab img {
+    width: 50px;
+    /* Adjust the size as needed */
+    height: 50px;
+    /* Adjust the size as needed */
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    /* Set the width to match the desired height */
+    height: 40px;
+    /* Set the height to match the desired height */
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #343a40;
+    /* Light gray background color */
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    /* Add transition for smooth color change */
+    border-radius: 5px;
+    /* Add border radius for rounded corners */
+}
+
+
+.scroll-to-top:hover {
+    background-color: #917e56 !important;
+    /* Dark gray background color on hover */
+}
+
+/* Adjust the color of the arrow icon */
+.scroll-to-top i {
+    color: #fff;
+    /* Default black color */
+}
+
+/* Change the color of the arrow icon on hover */
+.scroll-to-top:hover i {
+    color: #000;
+    /* White color on hover */
+}
+
+
+/* social media css*/
+.social-icons a {
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    /* Slightly increase size on hover */
+}
+
+.social-accounts img {
+    width: 40px;
+    height: 40px;
+    transition: box-shadow 0.3s ease;
+}
+
+.social-accounts img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.call-us-now {
+    text-align: right;
+}
+
+
+/* google translate */
+.translate-widget {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    z-index: 1000;
+}
+
+/* Spinner Styles */
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 1s ease-out; /* Smooth transition */
+}
+
+.spinner-wrapper.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.spinner-image {
+    width: 200px; /* Adjust the size as needed */
+    height: 100px;
+    animation: slowFadeIn 2s ease-in-out; /* Slow fade-in animation */
+}
+
+@keyframes slowFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Hide spinner after loading */
+.hidden {
+    display: none;
+}
+
+
+/* product */
+.product-card {
+    margin: 20px;
+    border: none;
+    overflow: hidden;
+    position: relative; /* Ensure the card is the positioning context */
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-card .card-body {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.more-button {
+    position: absolute;
+    top: 0%; /* Adjust this to position the button half on the image and half on the text */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #6f5c3d !important;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.more-button:hover {
+    background-color: #917e56 !important;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+    font-weight: bold;
+    margin-top: 10px; /* Add margin to accommodate the button */
+}
+
+
+
+/* form styles */
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="url"],
+.form-group textarea,
+.form-group select {
+    background-color: #e3e0d6 !important;
+    border-color: #575f6741;
+}
+
+.required {
+    color: red;
+}
+
+.form-control {
+    background-color: #e3e0d6 !important;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Center form and reduce its width */
+.form-width {
+    max-width: 700px;
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #e3e0d6 !important; /* Ensure the text is visible on the dark background */
+}
+
+
+.menu-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu-item img {
+    width: 80px;
+    height: 80px;
+}
+.menu {
+    background: #f8f9fa;
+    padding: 60px 0;
+}
+.nav-pills .nav-link {
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-pills .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+}
+.nav-pills .nav-link:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
